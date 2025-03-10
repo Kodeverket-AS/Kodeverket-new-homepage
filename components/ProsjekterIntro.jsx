@@ -2,7 +2,7 @@ export default function ProsjektertIntro() {
   return (
     <>
       <div
-        className="flex flex-col justify-center h-full w-full bg-cover bg-center bg-no-repeat"
+        className="flex flex-col justify-center md:h-[50vh] bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: "url('/Portfolio.png')",
         }}

@@ -1,8 +1,7 @@
 import Footer from "@/components/Footer";
 import NavBar from "@/components/NavBar";
 import ProsjektertIntro from "@/components/ProsjekterIntro";
-
-import Image from "next/image";
+import Prosjketer from "@/components/Prosjekter";
 
 export default function KontaktPage() {
  return (
@@ -10,7 +9,8 @@ export default function KontaktPage() {
      <NavBar />
 
      <div className="flex flex-col flex-flow flex-grow-1 h-[100vh]">
-       <ProsjektertIntro/>
+       <ProsjektertIntro />
+       <Prosjketer />
     
      </div>
 

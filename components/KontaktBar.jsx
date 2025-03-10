@@ -1,6 +1,6 @@
 export default function KontaktBar() {
     return (
-      <div className=" bg-cyan-950 ">
+      <div className=" bg-cyan-950 my-8 ">
         <div
           className="
         flex flex-row justify-around gap-10 mx-18"
