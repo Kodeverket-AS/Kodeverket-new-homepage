@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NotFound() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-center p-4">
       <div className="relative">
-        <div className="w-[600px] md:w-[1000px] lg:w-[1200px]">
+        <div className="w-[600px] md:w-[1000px] lg:w-[1200px] pointer-events-none select-none ">
           <Image
             src="/404.png"
             alt="Not Found"
@@ -23,12 +24,14 @@ export default function NotFound() {
               Oops! Denne siden eksisterer ikke.
             </p>
           </div>
-          <button
-            href="/"
-            className="mt-8 md:mt-10 lg:mt-14 px-10 md:px-14 lg:px-18 py-2 bg-sky-700 hover:bg-sky-500 transition-colors duration-200 text-white rounded-sm font-medium text-sm md:text-base lg:text-lg"
-          >
-            Hjem
-          </button>
+          <div className="flex justify-center items-end h-16 md:h-20 lg:h-26">
+            <Link
+              href="/"
+              className=" px-10 md:px-14 lg:px-18 py-2 bg-sky-700 hover:bg-sky-500 transition-colors duration-200 text-white rounded-sm font-medium text-sm md:text-base lg:text-lg"
+            >
+              Hjem
+            </Link>
+          </div>
         </div>
       </div>
     </div>
