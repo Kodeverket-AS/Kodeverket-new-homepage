@@ -16,7 +16,7 @@ const center = {
 
 const MapComponent = () => {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyBNKtD94nXUh503qJProTU54d28_hEcQjY", 
+    googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY,
   });
 
   if (loadError) return <div>Kartet er midlertidig utilgjengelig. Beklager ulempene. </div>;

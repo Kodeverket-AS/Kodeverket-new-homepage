@@ -21,7 +21,7 @@ export default function Kontakt() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:5000/send", {
+      const response = await fetch("http://localhost:5001/send", {
         method: "POST",
         body: JSON.stringify(formData),
         headers: {
@@ -38,7 +38,8 @@ export default function Kontakt() {
         });
         alert("Wiadomość wysłana pomyślnie!");
       } else {
-        alert("Noe gikk galt. Prøv igjen.");
+        const errorData = await response.json(); 
+        alert(errorData.error || "Noe gikk galt. Prøv igjen.");
       }
     } catch (error) {
       console.error("Feil ved sending:", error);
@@ -81,7 +82,7 @@ export default function Kontakt() {
             id="phone"
             type="tel"
             name="phone"
-            placeholder="Phone number"
+            placeholder="Telefonnummer"
             value={formData.phone}
             onChange={handleChange}
             required
@@ -102,7 +103,7 @@ export default function Kontakt() {
 
           <button
             type="submit"
-            className="mx-auto text-white bg-sky-700 rounded  h-10  px-12 cursor-pointer mb-8 hover:border-2 hover:border-white hover:bg-cyan-950"
+            className="mx-auto text-white bg-sky-700 rounded h-10 px-12 cursor-pointer mb-8 hover:border-2 hover:border-white hover:bg-cyan-950"
           >
             Send melding
           </button>

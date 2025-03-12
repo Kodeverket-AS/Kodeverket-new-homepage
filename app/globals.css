@@ -4,10 +4,7 @@
   font-family: "Helvetica Neue";
   src: url(/public/fonts/HelveticaNeue-Medium.otf) format("opentype");
 }
-@font-face {
-  font-family: "fab";
-  src: url();
-}
+
 
 :root {
   --background: #ffffff;

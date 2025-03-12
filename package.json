@@ -17,10 +17,15 @@
     "@sanity/client": "^6.28.3",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.78.0",
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
     "framer-motion": "^12.4.10",
     "gsap": "^3.12.7",
     "next": "15.2.1",
     "next-sanity": "^9.9.0",
+    "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "sanity": "^3.78.0",
@@ -36,5 +41,19 @@
     "postcss": "^8.5.3",
     "postcss-import": "^16.1.0",
     "tailwindcss": "^4.0.11"
-  }
+  },
+  "description": "This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).",
+  "main": "sanity.cli.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kodeverket-AS/Kodeverket-new-homepage.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  
+  "bugs": {
+    "url": "https://github.com/Kodeverket-AS/Kodeverket-new-homepage/issues"
+  },
+  "homepage": "https://github.com/Kodeverket-AS/Kodeverket-new-homepage#readme"
 }
