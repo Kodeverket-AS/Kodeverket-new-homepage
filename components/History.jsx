@@ -1,7 +1,7 @@
 export default function History() {
   return (
     <div>
-      <div className="flex flex-col border-2 border-red-500 mx-18">
+      <div className="flex flex-col  mx-18">
         <h1 className="text-2xl font-bold text-center py-6"> Vår historie</h1>
         <div className="flex">
           <div className="w-4/9 text-base flex flex-col items-left justify-center gap-4 py-4">

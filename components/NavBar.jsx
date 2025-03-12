@@ -1,62 +1,72 @@
-"use client"
-import React, { useState } from "react";
-
-
+"use client";
+import { useState } from "react";
 
 export default function NavBar() {
-     const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-     const handleLinkClick = () => {
-       setIsOpen(false);
-     };
+  const handleLinkClick = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <>
-      <div className="flex justify-between align-center m-4">
+    <nav className=" px-12 sticky top-0 z-50  bg-white text-cyan-950 lg:flex lg:justify-between 3xl:px-80 mb-8 mt-6">
+      <div className="flex items-center justify-between">
         <img
-          src="logo.jpeg"
-          alt="kodeverket logo"
-          className="w-48 my-12 mx-12"
+          src="/logo.jpeg"
+          alt="Logo"
+          className="h-10 py:2  xl:h-14 mt-4  mb-4"
         />
-        <div className="flex items-center space-x-4 mx-8">
-          <button className=" text-white bg-sky-700 rounded w-34 h-10 cursor-pointer">
-            {" "}
-            Kontakt oss{" "}
-          </button>
-          <button
-            className=" text-3xl cursor-pointer"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            ☰
-          </button>
-        </div>
+
+        <button
+          className="lg:hidden  text-3xl"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          ☰
+        </button>
       </div>
 
       <ul
         className={`${
           isOpen ? "flex" : "hidden"
-        } flex-col text-white bg-cyan-950 items-center space-y-4 py-20 `}
+        } flex-col items-end space-y-4 pb-5 lg:flex lg:flex-row lg:gap-8  lg:space-y-0 lg:text-xl lg:items-end`}
       >
         <li>
-          <a href="#hjem" className="text-lg" onClick={handleLinkClick}>
+          <a
+            href="#home"
+            className=" hover:underline lg:text-lg"
+            onClick={handleLinkClick}
+          >
             HOME
           </a>
         </li>
         <li>
-          <a href="#tjenester" className="text-lg" onClick={handleLinkClick}>
+          <a
+            href="#tjenester"
+            className=" hover:underline lg:text-lg"
+            onClick={handleLinkClick}
+          >
             TJENESTER
           </a>
         </li>
         <li>
-          <a href="#prosjekter" className="text-lg" onClick={handleLinkClick}>
+          <a
+            href="#våre-prosjekter"
+            className=" hover:underline lg:text-lg"
+            onClick={handleLinkClick}
+          >
             VÅRE PROSJEKTER
           </a>
         </li>
         <li>
-          <a href="#kontakt" className="text-lg" onClick={handleLinkClick}>
+          <a
+            href="#kontakt"
+            className=" hover:underline md:text-lg"
+            onClick={handleLinkClick}
+          >
             KONTAKT
           </a>
         </li>
       </ul>
-    </>
+    </nav>
   );
 }
