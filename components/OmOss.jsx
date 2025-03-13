@@ -1,12 +1,12 @@
 export default function OmOss() {
   return (
-    <div className="flex border-2 border-red-500 mx-18">
+    <div className="flex  mx-18">
       <div className="flex flex-col items-left justify-center gap-4 py-4 w-4/9">
         {" "}
         <h1 className="text-5xl font-bold">
           {" "}
           Smarte løsninger for en digital verden med{" "}
-          <span className="text-sky-600">Breiflabb </span>
+          <span className="text-sky-600">Kodeverket </span>
 
         </h1>
         <p className="text-base">
