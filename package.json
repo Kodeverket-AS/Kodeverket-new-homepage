@@ -16,7 +16,7 @@
     "@react-google-maps/api": "^2.20.6",
     "@sanity/client": "^6.28.3",
     "@sanity/image-url": "^1.1.0",
-    "@sanity/vision": "^3.78.0",
+    "@sanity/vision": "^2.2.6",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
@@ -24,11 +24,11 @@
     "framer-motion": "^12.4.10",
     "gsap": "^3.12.7",
     "next": "15.2.1",
-    "next-sanity": "^9.9.0",
+    "next-sanity": "^0.8.5",
     "nodemailer": "^6.10.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "sanity": "^3.78.0",
+    "sanity": "^2.36.6",
     "styled-components": "^6.1.15",
     "swiper": "^11.2.5"
   },
@@ -51,7 +51,6 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  
   "bugs": {
     "url": "https://github.com/Kodeverket-AS/Kodeverket-new-homepage/issues"
   },
