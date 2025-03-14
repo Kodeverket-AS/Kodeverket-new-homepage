@@ -11,11 +11,7 @@ export default function NavBar() {
   return (
     <nav className=" px-12 sticky top-0 z-50  bg-white text-cyan-950 lg:flex lg:justify-between 3xl:px-80 mb-8 mt-6">
       <div className="flex items-center justify-between">
-        <img
-          src="/logo.jpeg"
-          alt="Logo"
-          className="h-10 py:2  xl:h-14 mt-4  mb-4"
-        />
+       <h1 className=" font-bold text-5xl py-4"> Kodeverket <span className="text-sky-600 text-xl">Bergen</span></h1>
 
         <button
           className="lg:hidden  text-3xl"

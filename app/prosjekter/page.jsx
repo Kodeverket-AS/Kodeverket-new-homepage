@@ -3,7 +3,7 @@ import Prosjketer from "@/components/Prosjekter";
 
 import Layout from "/components/Layout.jsx"
 
-export default function KontaktPage() {
+export default function ProsjekterPage() {
  return (
     <Layout>
     <div className="flex flex-col flex-flow flex-grow-1 h-[100vh]">

@@ -7,7 +7,7 @@ import HvemViEr from "/components/HvemErVi";
 
 import Layout from "/components/Layout.jsx"
 
-import Image from "next/image";
+
 
 
 export default function Home() {

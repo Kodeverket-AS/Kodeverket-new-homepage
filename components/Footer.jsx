@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer
       style={{
-        backgroundImage: "url('/footerbg.jpeg')",
+        backgroundImage: "url('/footerbg.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -13,6 +13,8 @@ export default function Footer() {
         <p>info@breipost.no</p>
         <p>9999 99 999</p>
       </div>
+
+     <h1 className="text-8xl text-white">Kodeverket</h1>
       <div className="flex flex-col  text-white mx-24 ">
         <h3 className="text-xl font-bold pb-4">Snarvei</h3>
         <a href="">Om oss</a>
