@@ -6,20 +6,21 @@ import KontaktForm from "@/components/KontaktForm";
 import MapComponent from "@/components/MapComponent";
 
 export default function KontaktPage() {
-  return (
-    <div className="flex flex-col">
-      <NavBar />
+    return (
+        <div className='flex flex-col'>
+            <NavBar />
 
-      <div className="flex flex-col flex-grow min-h-screen">
-        <KontaktIntro />
-        <KontaktBar />
-        <div className="flex flex-row gap-12 mx-16 my-8">
-          <MapComponent />
-          <KontaktForm />
+            <div className='flex flex-col flex-grow min-h-screen'>
+                <KontaktIntro />
+                <KontaktBar />
+                <div className='flex flex-row gap-12 mx-16 my-8'>
+                    <MapComponent />
+                    <KontaktForm />
+                </div>
+                <h1>This is just for bug testing....</h1>
+            </div>
+
+            <Footer />
         </div>
-      </div>
-
-      <Footer />
-    </div>
-  );
+    );
 }
