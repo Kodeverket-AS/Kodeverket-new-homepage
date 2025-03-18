@@ -32,7 +32,7 @@ export default function NavBar() {
       >
         <li>
           <a
-            href="home"
+            href="/"
             className=" hover:underline lg:text-lg"
             onClick={handleLinkClick}
           >
