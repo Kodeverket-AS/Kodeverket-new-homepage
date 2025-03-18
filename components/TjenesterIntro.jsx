@@ -2,7 +2,7 @@
 export default function TjenesterIntro() {
   return (
     <div
-      className="flex flex-col justify-end w-full h-[50vh] max-h-[50vh] bg-contain bg-center bg-no-repeat"
+      className="flex flex-col justify-end w-full h-[40vh] max-h-[50vh] bg-contain bg-center bg-no-repeat"
       style={{
         backgroundImage: "url('/Service.png')",
       }}

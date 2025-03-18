@@ -9,7 +9,7 @@ export default function BasicCard() {
    
   return (
     <>
-      <div className="text-center text-2xl font-bold py-12 mt-4 ">
+      <div className="text-center text-2xl font-bold py-12 my-12 ">
         <h2> Hva gjør vi ? </h2>
       </div>
 

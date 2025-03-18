@@ -14,15 +14,15 @@ export default function ColorToggleButton() {
   };
 
   return (
-    <div className="flex justify-center items-center mx-auto">
-      <div>
+    <div className="flex justify-center items-center ">
+      <div className="flex flex-col items-center">
         <ToggleButtonGroup
           color="primary"
           value={alignment}
           exclusive
           onChange={handleChange}
           aria-label="Platform"
-          className="flex justify-center items-center my-8 mx-auto"
+          className="flex justify-center my-8 "
         >
           <ToggleButton value="web">WEB</ToggleButton>
           <ToggleButton value="design">UI/UX Design</ToggleButton>
@@ -87,7 +87,7 @@ export default function ColorToggleButton() {
               </div>
             </div>
             <Services />
-            <Technologies/>
+            <Technologies />
           </div>
         )}
       </div>
