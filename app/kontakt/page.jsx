@@ -12,7 +12,7 @@ export default function KontaktPage() {
       <div className="flex flex-col flex-grow min-h-screen">
         <KontaktIntro />
         <KontaktBar />
-        <div className="flex flex-row gap-12 mx-16 my-8">
+        <div className="flex flex-col lg:flex-row gap-12 mx-16 my-8">
           <MapComponent />
           <KontaktForm />
         </div>

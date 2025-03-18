@@ -3,10 +3,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 
-
- 
-export default function BasicCard() {
-   
+export default function ServicesUIUX() {
   return (
     <>
       <div className="text-center text-2xl font-bold py-12 mt-4 ">
@@ -32,11 +29,11 @@ export default function BasicCard() {
               01
             </Typography>
             <Typography sx={{ color: "text.secondary", mb: 1.5 }}>
-              UI/UX Design
+              UX Research
             </Typography>
             <Typography variant="body2">
-              Vi skaper moderne, estetisk tiltalende og funksjonelle
-              designløsninger som gir en unik brukeropplevelse.
+              Vi gjennomfører grundig UX-research for å forstå brukernes behov
+              og skape løsninger som gir enestående opplevelser.
             </Typography>
           </CardContent>
         </Card>
@@ -50,11 +47,12 @@ export default function BasicCard() {
               02
             </Typography>
             <Typography sx={{ color: "text.secondary", mb: 1.5 }}>
-              Front-end
+              UX Design
             </Typography>
             <Typography variant="body2">
-              Vårt team utvikler intuitive og raske grensesnitt for
-              nettapplikasjoner som oppfyller de høyeste ytelsesstandardene.
+              Vår UX-designprosess fokuserer på å skape intuitive og
+              meningsfulle brukeropplevelser som engasjerer og tilfredsstiller
+              brukerne.
             </Typography>
           </CardContent>
         </Card>
@@ -68,15 +66,32 @@ export default function BasicCard() {
               03
             </Typography>
             <Typography sx={{ color: "text.secondary", mb: 1.5 }}>
-              Back-end
+              UI Design
             </Typography>
             <Typography variant="body2">
-              Vi bygger pålitelige og skalerbare backend-systemer som sikrer
-              stabil drift og sikkerhet for nettapplikasjoner.
+              Vi designer estetisk tiltalende og funksjonelle grensesnitt som
+              kombinerer kreativitet med brukervennlighet.
             </Typography>
           </CardContent>
         </Card>
-        
+        <Card sx={{ minWidth: 275, maxWidth: 300 }}>
+          <CardContent>
+            <Typography
+              gutterBottom
+              sx={{ color: "text.secondary", fontSize: 14, marginBottom: 7.5 }}
+            >
+              04
+            </Typography>
+            <Typography sx={{ color: "text.secondary", mb: 1.5 }}>
+              Prototyping
+            </Typography>
+            <Typography variant="body2">
+              Vi bruker prototyping for å teste og forbedre ideer tidlig i
+              prosessen, slik at vi kan levere løsninger som fungerer fra dag
+              én.
+            </Typography>
+          </CardContent>
+        </Card>
       </div>
     </>
   );

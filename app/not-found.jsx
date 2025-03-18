@@ -15,7 +15,7 @@ export default function NotFound() {
             objectFit="cover"
           />
         </div>
-        <div className="absolute -bottom-4 md:-bottom-6 lg:-bottom-4 left-[25%] right-[25%] h-[35%] backdrop-blur-md rounded-lg p-4 mb-12 md:mb-20 border-white border-1">
+        <div className="absolute -bottom-4 md:-bottom-6 lg:-bottom-4 left-[25%] right-[25%] h-[35%]  bg-white/30 backdrop-blur-md rounded-lg p-4 mb-12 md:mb-20 border-white border-1">
           <div className=" text-cyan-950">
             <h1 className="text-2xl mt-1 md:text-5xl md:mt-6 font-bold ">
               404

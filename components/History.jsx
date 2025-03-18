@@ -3,8 +3,8 @@ export default function History() {
     <div>
       <div className="flex flex-col  mx-18">
         <h1 className="text-2xl font-bold text-center py-6"> Vår historie</h1>
-        <div className="flex">
-          <div className="w-4/9 text-base flex flex-col items-left justify-center gap-4 py-4">
+        <div className="flex flex-col-reverse md:flex-row">
+          <div className="md:w-4/9 text-base flex flex-col items-left justify-center gap-4 py-4">
             <p>
               {" "}
               Det startet Oktober 2022. Da var det fire kandidater fra
@@ -22,7 +22,7 @@ export default function History() {
           <img
             src="/historie.png"
             alt="man in fornt of computer"
-            className="w-5/9"
+            className="md:w-5/9"
           />
         </div>
       </div>

@@ -9,10 +9,10 @@ import Layout from "/components/Layout.jsx";
 export default function TjenesterPage() {
   return (
     <Layout>
-      <div className="flex flex-col flex-flow flex-grow-1 h-[100vh]">
+      <div className="flex flex-col flex-grow min-h-screen">
         <TjenesterIntro />
-        <TjenesterSwitch/> 
-        <Services />
+        <TjenesterSwitch />
+       
       </div>
     </Layout>
   );

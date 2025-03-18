@@ -23,7 +23,7 @@ const MapComponent = () => {
   if (!isLoaded) return <div>Vennligst vent, kartet lastes...</div>;
 
   return (
-    <div className="w-1/2 ">
+    <div className=" md:w-1/2 ">
       <GoogleMap
         mapContainerStyle={mapContainerStyle}
         zoom={15}

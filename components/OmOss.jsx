@@ -1,7 +1,7 @@
 export default function OmOss() {
   return (
-    <div className="flex  mx-18">
-      <div className="flex flex-col items-left justify-center gap-4 py-4 w-4/9">
+    <div className="flex flex-col-reverse md:flex-row  mx-18">
+      <div className="flex flex-col md:items-left justify-center gap-4 py-4 md:w-4/9">
         {" "}
         <h1 className="text-5xl font-bold">
           {" "}
@@ -14,12 +14,12 @@ export default function OmOss() {
           Teknologiske innovasjoner som transformerer din bedrift i den moderne
           digitale verden
         </p>
-        <button className="  text-white bg-sky-700 rounded w-34 h-10 cursor-pointer ">
+        <button className="  text-white bg-sky-700 rounded md:w-34 h-10 cursor-pointer ">
           {" "}
           Bestill nå{" "}
         </button>{" "}
       </div>
-      <img src="/omoss.png" alt="man in front of computer" className="w-5/9"/>
+      <img src="/omoss.png" alt="man in front of computer" className="md:w-5/9"/>
     </div>
   );
 }

@@ -9,9 +9,13 @@ export default function NavBar() {
   };
 
   return (
-    <nav className=" px-12 sticky top-0 z-50  bg-white text-cyan-950 lg:flex lg:justify-between 3xl:px-80 mb-8 mt-6">
+    <nav className=" border-2 border-red-600 px-12 sticky top-0 z-50  bg-white text-cyan-950 lg:flex lg:justify-between 3xl:px-80 mb-8 ">
       <div className="flex items-center justify-between">
-       <h1 className=" font-bold text-5xl py-4"> Kodeverket <span className="text-sky-600 text-xl">Bergen</span></h1>
+        <img
+          src="/logoHorizontal.png"
+          alt="kodeVerket Bergen Logo"
+          className="w-[220px] md:w-[320px]"
+        />
 
         <button
           className="lg:hidden  text-3xl"
@@ -28,7 +32,7 @@ export default function NavBar() {
       >
         <li>
           <a
-            href="#home"
+            href="home"
             className=" hover:underline lg:text-lg"
             onClick={handleLinkClick}
           >
@@ -37,7 +41,7 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            href="#tjenester"
+            href="tjenester"
             className=" hover:underline lg:text-lg"
             onClick={handleLinkClick}
           >
@@ -46,7 +50,7 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            href="#våre-prosjekter"
+            href="prosjekter"
             className=" hover:underline lg:text-lg"
             onClick={handleLinkClick}
           >
@@ -55,7 +59,7 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            href="#kontakt"
+            href="kontakt"
             className=" hover:underline md:text-lg"
             onClick={handleLinkClick}
           >
