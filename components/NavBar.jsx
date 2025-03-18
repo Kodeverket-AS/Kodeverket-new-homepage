@@ -11,15 +11,11 @@ export default function NavBar() {
   return (
     <nav className=" px-12 sticky top-0 z-50  bg-white text-cyan-950 lg:flex lg:justify-between 3xl:px-80 mb-8 mt-6">
       <div className="flex items-center justify-between">
-        <a href="/">
         <img
           src="/logo.jpeg"
           alt="Logo"
           className="h-10 py:2  xl:h-14 mt-4  mb-4"
         />
-        
-        </a>
-        
 
         <button
           className="lg:hidden  text-3xl"
@@ -36,7 +32,7 @@ export default function NavBar() {
       >
         <li>
           <a
-            href="/"
+            href="#home"
             className=" hover:underline lg:text-lg"
             onClick={handleLinkClick}
           >
@@ -54,7 +50,7 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            href="/prosjekter"
+            href="#våre-prosjekter"
             className=" hover:underline lg:text-lg"
             onClick={handleLinkClick}
           >
@@ -63,7 +59,7 @@ export default function NavBar() {
         </li>
         <li>
           <a
-            href="/kontakt"
+            href="#kontakt"
             className=" hover:underline md:text-lg"
             onClick={handleLinkClick}
           >
