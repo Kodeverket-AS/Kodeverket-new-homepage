@@ -1,7 +1,7 @@
 export default function HvemViEr() {
   return (
     <div className="my-6">
-      <div className="flex flex-col mx-18">
+      <div className="flex flex-col border-2 border-red-500 mx-18">
         <h1 className="text-2xl font-bold text-center py-6"> Hvem vi er ? </h1>
         <div className="flex">
           <img src="/WhoWeAre.png" alt="happy people" className="w-5/9" />

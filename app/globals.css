@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Poppins";
-  src: url(/fonts/Poppins-Regular.ttf) format("truetype");
+  font-family: "Helvetica Neue";
+  src: url(/public/fonts/HelveticaNeue-Medium.otf) format("opentype");
 }
 
 
@@ -28,5 +28,5 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Poppins", sans-serif;
+  font-family: "Helvetica Neue", sans-serif;
 }
