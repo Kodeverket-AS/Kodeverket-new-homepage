@@ -6,7 +6,7 @@ export default function Technologies() {
         Teknologier vi bruker
       </h1>
 
-      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 my-8">
+      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 my-8 xl:text-xl">
         <div className="flex flex-col justify-between items-center">
           <img
             className="w-[50px] "

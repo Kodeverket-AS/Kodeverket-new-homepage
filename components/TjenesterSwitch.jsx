@@ -36,7 +36,7 @@ export default function ColorToggleButton() {
                 UI/UX Design
               </h1>
               <div className="flex flex-col-reverse md:flex-row">
-                <div className="md:w-4/9 text-base flex flex-col items-left justify-center gap-4 py-4">
+                <div className="md:w-4/9 text-base flex flex-col items-left justify-center gap-4 py-4 xl:text-xl">
                   <p>
                     {" "}
                     Vår ekspertise innen UI/UX-design sikrer at vi skaper
@@ -64,7 +64,7 @@ export default function ColorToggleButton() {
             <div className="flex flex-col  mx-18">
               <h1 className="text-2xl font-bold text-center py-6"> WEB</h1>
               <div className="flex flex-col-reverse md:flex-row">
-                <div className="md:w-4/9 text-base flex flex-col items-left justify-center gap-4 py-4">
+                <div className="md:w-4/9 text-base flex flex-col items-left justify-center gap-4 py-4 xl:text-xl">
                   <p>
                     {" "}
                     Vi er et selskap som spesialiserer oss på å lage moderne og

@@ -4,7 +4,7 @@ export default function History() {
       <div className="flex flex-col  mx-18">
         <h1 className="text-2xl font-bold text-center py-6"> Vår historie</h1>
         <div className="flex">
-          <div className="w-4/9 text-base flex flex-col items-left justify-center gap-4 py-4">
+          <div className="w-4/9 text-base flex flex-col items-left justify-center gap-4 py-4 xl:text-xl">
             <p>
               {" "}
               Det startet Oktober 2022. Da var det fire kandidater fra

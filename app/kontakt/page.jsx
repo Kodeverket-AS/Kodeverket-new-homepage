@@ -9,7 +9,7 @@ import Layout from "/components/Layout.jsx"
 export default function KontaktPage() {
   return (
     <Layout>
-      <div className="flex flex-col flex-grow min-h-screen">
+      <div className="flex flex-col flex-grow min-h-screen xl:text-xl">
         <KontaktIntro />
         <KontaktBar />
         <div className="flex flex-col lg:flex-row gap-12 mx-16 my-8">

@@ -9,7 +9,7 @@ export default function BasicCard() {
    
   return (
     <>
-      <div className="text-center text-2xl font-bold py-12 my-12 ">
+      <div className="text-center text-2xl font-bold py-12 my-12  xl:text-xl">
         <h2> Hva gjør vi ? </h2>
       </div>
 
@@ -24,7 +24,7 @@ export default function BasicCard() {
         </Card>
 
         <Card sx={{ minWidth: 275, maxWidth: 300 }}>
-          <CardContent>
+          <CardContent  >
             <Typography
               gutterBottom
               sx={{ color: "text.secondary", fontSize: 14, marginBottom: 7.5 }}
@@ -34,7 +34,7 @@ export default function BasicCard() {
             <Typography sx={{ color: "text.secondary", mb: 1.5 }}>
               UI/UX Design
             </Typography>
-            <Typography variant="body2">
+            <Typography variant="body2" >
               Vi skaper moderne, estetisk tiltalende og funksjonelle
               designløsninger som gir en unik brukeropplevelse.
             </Typography>
@@ -42,7 +42,7 @@ export default function BasicCard() {
         </Card>
 
         <Card sx={{ minWidth: 275, maxWidth: 300 }}>
-          <CardContent>
+          <CardContent >
             <Typography
               gutterBottom
               sx={{ color: "text.secondary", fontSize: 14, marginBottom: 7.5 }}
@@ -60,7 +60,7 @@ export default function BasicCard() {
         </Card>
 
         <Card sx={{ minWidth: 275, maxWidth: 300 }}>
-          <CardContent>
+          <CardContent >
             <Typography
               gutterBottom
               sx={{ color: "text.secondary", fontSize: 14, marginBottom: 7.5 }}
@@ -76,7 +76,6 @@ export default function BasicCard() {
             </Typography>
           </CardContent>
         </Card>
-        
       </div>
     </>
   );

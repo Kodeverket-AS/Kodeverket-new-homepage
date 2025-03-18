@@ -6,7 +6,7 @@ import Typography from "@mui/material/Typography";
 export default function ServicesUIUX() {
   return (
     <>
-      <div className="text-center text-2xl font-bold py-12 mt-4 ">
+      <div className="text-center text-2xl font-bold py-12 mt-4 xl:text-xl ">
         <h2> Hva gjør vi ? </h2>
       </div>
 
