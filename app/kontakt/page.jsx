@@ -1,14 +1,15 @@
-
+import Footer from "@/components/Footer";
 import KontaktIntro from "@/components/KontaktIntro";
+import NavBar from "@/components/NavBar";
 import KontaktBar from "@/components/KontaktBar";
 import KontaktForm from "@/components/KontaktForm";
 import MapComponent from "@/components/MapComponent";
 
-import Layout from "/components/Layout.jsx"
-
 export default function KontaktPage() {
   return (
-    <Layout>
+    <div className="flex flex-col">
+      <NavBar />
+
       <div className="flex flex-col flex-grow min-h-screen">
         <KontaktIntro />
         <KontaktBar />
@@ -17,7 +18,8 @@ export default function KontaktPage() {
           <KontaktForm />
         </div>
       </div>
-      
-    </Layout>
+
+      <Footer />
+    </div>
   );
 }
