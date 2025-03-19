@@ -1,6 +1,6 @@
 export default function OmOss() {
   return (
-    <div className="flex flex-col-reverse md:flex-row  mx-18">
+    <div className="flex flex-col-reverse md:flex-row  mx-4 md:mx-18">
       <div className="flex flex-col md:items-left justify-center gap-4 py-4 md:w-4/9">
         {" "}
         <h1 className="text-5xl font-bold">

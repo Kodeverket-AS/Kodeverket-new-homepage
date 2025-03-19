@@ -36,7 +36,7 @@ export default function Kontakt() {
           phone: "",
           message: "",
         });
-        alert("Wiadomość wysłana pomyślnie!");
+        alert("Melding er sent!!");
       } else {
         const errorData = await response.json(); 
         alert(errorData.error || "Noe gikk galt. Prøv igjen.");
@@ -49,11 +49,11 @@ export default function Kontakt() {
 
   return (
     <div className="text-white bg-cyan-950 flex flex-col items-center justify-center rounded-xl md:w-1/2">
-      <div className="flex flex-col items-center justify-center max-w-4xl mx-auto px-4 w-full mt-12">
+      <div className="flex flex-col items-center justify-center max-w-4xl mx-auto px-4 w-full  mt-12">
         <h2 className="text-2xl font-semibold text-center mb-8">Kontakt oss</h2>
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col space-y-4 mb-2 w-4/5 md:w-3/4 self-center"
+          className="flex flex-col space-y-4 mb-2  w-9/10  md:w-3/4 self-center"
         >
           <label htmlFor="name" className="font-medium">
             Personlig informasjon

@@ -9,7 +9,7 @@ export default function NavBar() {
   };
 
   return (
-    <nav className="  px-12 sticky top-0 z-50  bg-white text-cyan-950 lg:flex lg:justify-between 3xl:px-80 mb-8 ">
+    <nav className="  pl-4 pr-12 md:px-12 sticky top-0 z-50  bg-white text-cyan-950 lg:flex lg:justify-between 3xl:px-80 mb-8 ">
       <div className="flex items-center justify-between">
         <img
           src="/logoHorizontal.png"

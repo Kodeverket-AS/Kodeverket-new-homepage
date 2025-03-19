@@ -22,12 +22,12 @@ const [isOpenPhone, setIsOpenPhone] = useState(false);
           }}
           layout
           onClick={() => setIsOpenAddress(!isOpenAddress)}
-          className=" shadow-[0_10px_30px_rgba(0,0,0,0.5)] cursor-pointer flex flex-col items-center gap-10  py-4 md:w-1/3  max-w-[294px] bg-cyan-950 rounded-2xl text-white my-12"
+          className=" shadow-[0_10px_30px_rgba(0,0,0,0.5)] cursor-pointer flex flex-col items-center md:gap-10  py-4 md:w-1/3  max-w-[294px] bg-cyan-950 rounded-2xl text-white my-6 lg:my-12"
         >
           <motion.img
             layout="position"
             src="./icons/location.png"
-            className="w-1/4 mt-2 fill-white"
+            className="w-1/4 mt-2 "
             alt="adress pin icon"
           />
           {isOpenAddress && (
@@ -49,7 +49,7 @@ const [isOpenPhone, setIsOpenPhone] = useState(false);
           }}
           layout
           onClick={() => setIsOpenEmail(!isOpenEmail)}
-          className=" shadow-[0_10px_30px_rgba(0,0,0,0.5)] cursor-pointer flex flex-col items-center gap-10 py-4 md:w-1/3  max-w-[294px] bg-cyan-950 rounded-2xl text-white my-12"
+          className=" shadow-[0_10px_30px_rgba(0,0,0,0.5)] cursor-pointer flex flex-col items-center gap-10 py-4 md:w-1/3  max-w-[294px] bg-cyan-950 rounded-2xl text-white my-6 lg:my-12"
         >
           <motion.img
             layout="position"
@@ -76,7 +76,7 @@ const [isOpenPhone, setIsOpenPhone] = useState(false);
           }}
           layout
           onClick={() => setIsOpenPhone(!isOpenPhone)}
-          className=" shadow-[0_10px_30px_rgba(0,0,0,0.5)] cursor-pointer flex flex-col items-center gap-10 py-4 md:w-1/3  max-w-[294px] bg-cyan-950 rounded-2xl text-white my-12"
+          className=" shadow-[0_10px_30px_rgba(0,0,0,0.5)] cursor-pointer flex flex-col items-center gap-10 py-4 md:w-1/3  max-w-[294px] bg-cyan-950 rounded-2xl text-white my-6 lg:my-12"
         >
           <motion.img
             layout="position"
