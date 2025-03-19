@@ -1,3 +1,4 @@
+
 "use client";
 import "../app/globals.css";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,6 +8,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import Image from "next/image";
+
 
 const slides = [
   {
@@ -20,7 +22,9 @@ const slides = [
     src: "/omoss.png",
     title: "Project two",
     description:
+
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptatem.",
+
     cta: "Learn more",
   },
   {
@@ -45,6 +49,7 @@ const slides = [
     cta: "Learn more",
   },
 ];
+
 
 export default function Carousel() {
   return (
