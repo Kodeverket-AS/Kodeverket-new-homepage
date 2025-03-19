@@ -13,7 +13,7 @@ export default function KontaktPage() {
         <KontaktIntro />
         <KontaktBar />
         <div className="flex flex-col lg:flex-row gap-12 mx-4 md:mx-16 my-8">
-          <MapComponent />
+          <MapComponent className="w-full" />
           <KontaktForm />
         </div>
       </div>
