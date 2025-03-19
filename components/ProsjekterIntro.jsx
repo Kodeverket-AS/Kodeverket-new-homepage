@@ -8,7 +8,7 @@ export default function ProsjektertIntro() {
       }}
     >
       <div className="flex flex-col p-4 items-center gap-4 max-w-2/3 lg:max-w-4/5 mx-auto border-white border  bg-white/30 backdrop-blur-md text-cyan-950 mb-8">
-        <h1 className="text-3xl md:text-5xl font-bold mt-2">
+        <h1 className="text-3xl  font-bold mt-2">
           Velkommen til våre prosjekter!{" "}
         </h1>
         <p className="text-md text-center">
