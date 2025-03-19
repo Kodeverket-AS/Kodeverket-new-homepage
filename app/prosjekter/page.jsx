@@ -8,7 +8,7 @@ export default function ProsjekterPage() {
    <Layout>
      <div className=" flex flex-col flex-grow min-h-screen xl:text-xl">
        <ProsjektertIntro />
-       <Prosjketer />
+       <Prosjketer className="bg-white" />
      </div>
    </Layout>
  );
