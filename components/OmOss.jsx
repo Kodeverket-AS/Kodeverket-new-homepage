@@ -11,8 +11,8 @@ export default function OmOss() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCloseModal = () => {
-    console.log("Modal should close now");
-    setIsOpen(false);
+    // console.log("Modal should close now");
+    setIsOpen(!isOpen);
   };
 
   return (

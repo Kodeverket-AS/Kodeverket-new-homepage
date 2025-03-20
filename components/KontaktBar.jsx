@@ -64,8 +64,8 @@ const [isOpenPhone, setIsOpenPhone] = useState(false);
               transition={{ duration: 1 }}
               className="flex flex-col items-center "
             >
-              <h1 className="text-xl font-semibold">Email</h1>
-              <p> email@kodeverket.no</p>
+              <h1 className="text-xl font-semibold">E-mail</h1>
+              <p> hello@kodeverketbergen.no</p>
             </motion.div>
           )}
         </motion.div>
@@ -87,7 +87,7 @@ const [isOpenPhone, setIsOpenPhone] = useState(false);
           {isOpenPhone && (
             <motion.div className="flex flex-col items-center ">
               <h1 className="text-xl font-semibold">Phone</h1>
-              <p> 999 99 99</p>
+              <p> hello@kodeverketbergen.no</p>
             </motion.div>
           )}
         </motion.div>
