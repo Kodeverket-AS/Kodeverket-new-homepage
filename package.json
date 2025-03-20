@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.0",
     "@gsap/react": "^2.1.2",
@@ -32,10 +33,13 @@
     "sanity": "^3.79.0",
     "styled-components": "^6.1.15",
     "swiper": "^11.2.5"
-  },
-  "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@tailwindcss/postcss": "^4",
+
+    "next": "^15.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+
+ 
+
     "autoprefixer": "^10.4.20",
     "eslint": "^9",
     "eslint-config-next": "15.2.1",
@@ -56,4 +60,10 @@
     "url": "https://github.com/Kodeverket-AS/Kodeverket-new-homepage/issues"
   },
   "homepage": "https://github.com/Kodeverket-AS/Kodeverket-new-homepage#readme"
+
+    "eslint": "^9",
+    "eslint-config-next": "15.2.1",
+    "tailwindcss": "^4"
+  }
+
 }

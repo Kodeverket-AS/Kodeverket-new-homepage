@@ -15,11 +15,12 @@ import Image from "next/image";
 
 const slides = [
   {
-    src: "/omoss.png",
-    title: "Project one",
+    src: "/img.jpg",
+    title: "Team Work",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptatem.",
+      "Selskapet er Nordens ledende fagmilj\u00f8 innen Medarbeiderskap og den skandinaviske ledelsesmodellen. De jobber med \u00e5 styrke samarbeidet mellom medarbeidere og ledere for \u00e5 skape et godt arbeidsmilj\u00f8 og bedre resultater. Med over 40 \u00e5rs erfaring utvikler de skreddersydde HR-l\u00f8sninger i tett samarbeid med kundene sine.",
     cta: "Learn More",
+    logo:"/TWlogoWhite.png"
   },
   {
     src: "/omoss.png",
@@ -57,7 +58,7 @@ export default function Carousel() {
     <div className="bg-cyan-950 h-full my-8 p-6 my:mt-6 md:pb-10   flex items-center justify-center">
       <div className="w-full max-w-5xl relative ">
         <h1 className="text-center my-6   md:my-10 font-semibold text-2xl md:text-4xl text-white">
-          Våre prosjekter
+          V\u00e5re prosjekter
         </h1>
         <Swiper
           modules={[Navigation, Pagination, EffectCoverflow, Keyboard]}
@@ -110,7 +111,6 @@ export default function Carousel() {
           <div className="swiper-button-prev  cursor-pointer "></div>
           <div className="swiper-button-next cursor-pointer "></div>
         </Swiper>
-        {/* Custom Navigation Buttons */}
       </div>
     </div>
   );
