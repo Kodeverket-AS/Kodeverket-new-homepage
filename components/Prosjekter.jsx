@@ -1,14 +1,17 @@
-
 "use client";
 import "../app/globals.css";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  EffectCoverflow,
+  Keyboard,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/effect-coverflow";
 import Image from "next/image";
-
 
 const slides = [
   {
@@ -22,7 +25,6 @@ const slides = [
     src: "/omoss.png",
     title: "Project two",
     description:
-
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, voluptatem.",
 
     cta: "Learn more",
@@ -50,18 +52,18 @@ const slides = [
   },
 ];
 
-
 export default function Carousel() {
   return (
     <div className="bg-cyan-950 h-full my-8 p-6 my:mt-6 md:pb-10   flex items-center justify-center">
       <div className="w-full max-w-5xl relative ">
         <h1 className="text-center my-6   md:my-10 font-semibold text-2xl md:text-4xl text-white">
-          Our projects
+          Våre prosjekter
         </h1>
         <Swiper
-          modules={[Navigation, Pagination, EffectCoverflow]}
+          modules={[Navigation, Pagination, EffectCoverflow, Keyboard]}
           effect={"coverflow"}
           grabCursor={true}
+          keyboard={{ enabled: true, onlyInViewport: false }}
           centeredSlides={true}
           slidesPerView={1}
           loop={true}
@@ -81,7 +83,7 @@ export default function Carousel() {
               },
             },
           }}
-          className="relative max-w-lg  md:min-w-full"
+          className="relative max-w-lg  md:min-w-full select-none"
         >
           {slides.map((slide, index) => (
             <SwiperSlide key={index} className="relative overflow-hidden group">
