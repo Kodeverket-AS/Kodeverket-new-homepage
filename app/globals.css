@@ -1,17 +1,14 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "Helvetica Neue";
-  src: url(/public/fonts/HelveticaNeue-Medium.otf) format("opentype");
+  font-family: "Roboto";
+  src: url(/fonts/Roboto.ttf) format("truetype");
 }
-@font-face {
-  font-family: "fab";
-  src: url();
-}
+
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #053345;
 }
 
 @theme inline {
@@ -21,15 +18,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Helvetica Neue", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
