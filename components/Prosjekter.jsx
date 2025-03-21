@@ -55,7 +55,7 @@ const slides = [
 export default function Carousel() {
   return (
     <div className="bg-cyan-950 h-full my-8 p-6 my:mt-6 md:pb-10   flex items-center justify-center">
-      <div className="w-full max-w-5xl relative ">
+      <div className="w-full md:max-w-5xl lg:max-w-6xl relative">
         <h1 className="text-center my-6   md:my-10 font-semibold text-2xl md:text-4xl text-white">
           Våre prosjekter
         </h1>
@@ -74,12 +74,30 @@ export default function Carousel() {
           pagination={{ clickable: true }}
           breakpoints={{
             768: {
-              slidesPerView: 3,
+              slidesPerView: 2,
               coverflowEffect: {
                 rotate: -10,
-                stretch: -20,
+                stretch: -10,
                 depth: 100,
+                modifier: 4,
+              },
+            },
+            992: {
+              slidesPerView: 2,
+              coverflowEffect: {
+                rotate: -10,
+                stretch: -10,
+                depth: 90,
                 modifier: 3,
+              },
+            },
+            1400: {
+              slidesPerView: 2,
+              coverflowEffect: {
+                rotate: -10,
+                stretch: -10,
+                depth: 80,
+                modifier: 2,
               },
             },
           }}
@@ -93,7 +111,7 @@ export default function Carousel() {
                   alt={slide.title}
                   width={600}
                   height={400}
-                  className="w-full h-80 object-cover duration-700  sm:group-[.swiper-slide-active]:scale-120 select-none"
+                  className="w-full h-full object-cover duration-700  sm:group-[.swiper-slide-active]:scale-120 select-none"
                 />
               </div>
               <div className="absolute inset-0  bg-sky-700  flex items-center justify-center flex-col text-white p-4 transition-opacity opacity-100 duration-700 sm:opacity-0 sm:group-[.swiper-slide-active]:opacity-90">
