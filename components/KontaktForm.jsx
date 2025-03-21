@@ -48,7 +48,7 @@ export default function Kontakt() {
   };
 
   return (
-    <div className="text-white bg-cyan-950 flex flex-col items-center justify-center rounded-xl md:w-1/2">
+    <div className="text-white bg-cyan-950 flex flex-col items-center justify-center rounded-xl  ">
       <div className="flex flex-col items-center justify-center max-w-4xl mx-auto px-4 w-full  mt-12">
         <h2 className="text-2xl font-semibold text-center mb-8">Kontakt oss</h2>
         <form

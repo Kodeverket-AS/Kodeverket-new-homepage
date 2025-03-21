@@ -14,10 +14,11 @@ export default function KontaktPage() {
         <KontaktBar />
         <div className="flex flex-col lg:flex-row gap-12 mx-4 md:mx-16 my-8">
           <MapComponent className="w-full" />
-          <KontaktForm />
+          <div className="md:w-1/2">
+            <KontaktForm />
+          </div>
         </div>
       </div>
-      
     </Layout>
   );
 }
