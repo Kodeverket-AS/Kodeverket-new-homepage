@@ -20,15 +20,7 @@ export default {
       title: "Company Name",
       type: "string",
     },
-    {
-      name: "slug",
-      title: "Slug",
-      type: "slug",
-      options: {
-        source: "companyName",
-        maxLength: 96,
-      },
-    },
+    
     {
       name: "url",
       title: "Project URL",
