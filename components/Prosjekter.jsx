@@ -45,8 +45,8 @@ export default function Carousel() {
     fetchData();
   }, []);
   return (
-    <div className="h- md:h-[70lvh] my-12 p-6 flex items-center justify-center ">
-      <div className="w-full max-w-5xl relative mb-12 ">
+    <div className="h- md:h-[70lvh]  p-6 flex items-center justify-center ">
+      <div className="w-full h- max-w-5xl relative mb- ">
         <h1 className="text-center my-10 font-semibold text-2xl md:text-4xl ">
           Our projects
         </h1>
@@ -104,13 +104,10 @@ export default function Carousel() {
                   style={{
                     backgroundImage: `url(${urlFor(project.background).url()})`,
                     backgroundSize: "cover",
-                    objectFit: "cover",
-                    width: "100%",
-                    height: "auto",
+                    backgroundPosition: "center",
                     backgroundRepeat: "no-repeat",
                   }}
-                  aria-label={project.companyName}
-                  className="absolute inset-0  "
+                  className="absolute inset-0 w-full h-full"
                 />
 
                 <div className="absolute inset-0 bg-cyan-950/80" />
@@ -145,15 +142,12 @@ export default function Carousel() {
                 >
                   Vis projekt
                 </a>
-   
               </div>
             </SwiperSlide>
           ))}
+          <div className="swiper-button-prev absolute -left-10 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
+          <div className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
         </Swiper>
-
-        {/* Custom Navigation Buttons */}
-        <div className="swiper-button-prev absolute -left-10 top-1/2 transform  z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
-        <div className="swiper-button-next absolute right-0 top-1/2 transform  z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
       </div>
     </div>
   );
