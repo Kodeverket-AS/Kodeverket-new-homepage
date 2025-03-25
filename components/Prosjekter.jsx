@@ -1,7 +1,12 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  EffectCoverflow,
+  Keyboard,
+} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -9,7 +14,7 @@ import "swiper/css/effect-coverflow";
 import Image from "next/image";
 import { client } from "../sanity/lib/client";
 import { urlFor } from "../sanity/lib/image";
-
+import "../app/globals.css";
 
 export default function Carousel() {
   const [projects, setProjects] = useState([]);
@@ -19,21 +24,17 @@ export default function Carousel() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        
         const query = `*[_type == "project"]{
-  companyName,
-  url,
-
-  description,
-  logo {
-    asset -> { url }
-  },
-  background {
-    asset -> { url }
-  }
-}`;
-
-
+          companyName,
+          url,
+          description,
+          logo {
+            asset -> { url }
+          },
+          background {
+            asset -> { url }
+          }
+        }`;
 
         const data = await client.fetch(query); 
         setProjects(data); 
@@ -44,17 +45,19 @@ export default function Carousel() {
 
     fetchData();
   }, []);
+
   return (
-    <div className="h- md:h-[70lvh]  p-6 flex items-center justify-center ">
-      <div className="w-full h- max-w-5xl relative mb- ">
-        <h1 className="text-center my-10 font-semibold text-2xl md:text-4xl ">
-          Our projects
+    <div className="bg-cyan-950 h-full my-8 p-6 my:mt-6 md:pb-10 flex items-center justify-center">
+      <div className="w-full md:max-w-5xl lg:max-w-6xl relative">
+        <h1 className="text-center my-6 md:my-10 font-semibold text-2xl md:text-4xl text-white">
+          Våre prosjekter
         </h1>
 
         <Swiper
-          modules={[Navigation, Pagination, EffectCoverflow]}
+          modules={[Navigation, Pagination, EffectCoverflow, Keyboard]}
           effect={"coverflow"}
           grabCursor={true}
+          keyboard={{ enabled: true, onlyInViewport: false }}
           centeredSlides={true}
           slidesPerView={1}
           loop={true}
@@ -88,7 +91,7 @@ export default function Carousel() {
                 rotate: -10,
                 stretch: -10,
                 depth: 80,
-                modifier: 3,
+                modifier: 2,
               },
             },
           }}
@@ -97,9 +100,9 @@ export default function Carousel() {
           {projects.map((project) => (
             <SwiperSlide
               key={project._id}
-              className="relative overflow-hidden group rounded-sm "
+              className="relative overflow-hidden group rounded-sm"
             >
-              <div className="relative w-full h-[440px] flex items-center justify-center bg-transparent ">
+              <div className="relative w-full h-[440px] flex items-center justify-center bg-transparent">
                 <div
                   style={{
                     backgroundImage: `url(${urlFor(project.background).url()})`,
@@ -135,7 +138,7 @@ export default function Carousel() {
                 </div>
 
                 <a
-                  className="   bg-cyan-950 self-center text-center text-base w-1/3 border-1 border-white text-white px-6 py-2 mt-4 rounded hover:bg-cyan-800 transition cursor-pointer"
+                  className="bg-cyan-950 self-center text-center text-base w-1/3 border-1 border-white text-white px-6 py-2 mt-4 rounded hover:bg-cyan-800 transition cursor-pointer"
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
