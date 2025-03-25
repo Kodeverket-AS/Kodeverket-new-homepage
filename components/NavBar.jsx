@@ -28,9 +28,9 @@ export default function NavBar() {
       <ul
         className={`${
           isOpen ? "flex" : "hidden"
-        } flex-col items-end space-y-4 pb-5 lg:flex lg:flex-row lg:gap-8  lg:space-y-0 lg:text-xl lg:items-end`}
+        } flex-col items-end space-y-4 pb-5 lg:flex lg:flex-row lg:gap-8  lg:space-y-0 lg:text-xl lg:items-end my-auto`}
       >
-        <li>
+        <li >
           <a
             href="/"
             className=" hover:underline lg:text-lg"
