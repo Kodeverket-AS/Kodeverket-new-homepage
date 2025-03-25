@@ -4,11 +4,14 @@ import NavBar from "/components/NavBar.jsx";
 
 const Layout = ({ children }) => {
     return (
-        <div>        
-            <NavBar />
-            <main>{children}</main>
-            <Footer />
+      <div>
+        <div className="2xl:mx-60">
+          <NavBar />
+          <main>{children}</main>
         </div>
+       
+        <Footer />
+      </div>
     );
 };
 

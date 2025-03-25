@@ -25,3 +25,23 @@ body {
   color: var(--foreground);
   font-family: "Roboto", sans-serif;
 }
+
+.swiper-pagination-bullet {
+  opacity: 0.5 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: skyblue !important;
+  opacity: 1 !important;
+}
+
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: skyblue !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 30px !important;
+}
