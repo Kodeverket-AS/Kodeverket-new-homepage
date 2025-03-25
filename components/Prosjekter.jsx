@@ -114,12 +114,16 @@ export default function Carousel() {
                   className="w-full h-full object-cover duration-700  sm:group-[.swiper-slide-active]:scale-120 select-none"
                 />
               </div>
-              <div className="absolute inset-0  bg-sky-700  flex items-center justify-center flex-col text-white p-4 transition-opacity opacity-100 duration-700 sm:opacity-0 sm:group-[.swiper-slide-active]:opacity-90">
-                <div className="w-2/3">
-                  <h1 className="text-2xl mb-6 font-bold">{slide.title}</h1>
-                  <p className="text-sm mb-4">{slide.description}</p>
+              <div className="absolute inset-0  bg-sky-900  flex items-center justify-center flex-col text-white p-4 transition-opacity opacity-100 duration-700 sm:opacity-0 sm:group-[.swiper-slide-active]:opacity-90">
+                <div className="p-[3em] md:p-[2em]">
+                  <h1 className="text-2xl md:text-3xl pb-[1em] font-bold">
+                    {slide.title}
+                  </h1>
+                  <p className="text-sm pb-[1em] md:text-lg">
+                    {slide.description}
+                  </p>
                 </div>
-                <button className="text-sm md:text-base bg-cyan-950 border-1 border-white text-white px-6 py-2 mt-10 rounded hover:bg-cyan-800 transition ">
+                <button className="cursor-pointer text-sm md:text-base bg-sky-950 border-1 border-white text-white px-6 py-2 mb-14 rounded hover:bg-sky-800 transition ">
                   {slide.cta}
                 </button>
               </div>
