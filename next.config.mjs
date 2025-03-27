@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    SANITY_PROJECT_ID: "dm8vyhbj",
+    SANITY_PROJECT_ID: "6ci6a7t9",
     SANITY_DATASET: "production",
   },
   images: {
@@ -9,8 +9,9 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "cdn.sanity.io",
-       
-        pathname: "/**", },
+
+        pathname: "/**",
+      },
     ],
   },
 };
