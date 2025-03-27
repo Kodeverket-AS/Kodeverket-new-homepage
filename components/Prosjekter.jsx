@@ -38,16 +38,16 @@ export default function Carousel() {
         const data = await client.fetch(query); 
         setProjects(data); 
       } catch (error) {
-        console.error("Błąd pobierania danych: ", error);
+        console.error("Data feil: ", error);
       }
     };
 
     fetchData();
   }, []);
   return (
-    <div className=" bg-sky-700 h- md:h-[70lvh]  p-6 flex items-center justify-center ">
+    <div className="  h- md:h-[70lvh]  p-6 flex items-center justify-center ">
       <div className="w-full h- max-w-5xl relative mb- ">
-        <h1 className="text-center my-10 font-semibold text-2xl md:text-4xl  text-white">
+        <h1 className="text-center my-10 font-semibold text-2xl md:text-4xl ">
           Our projects
         </h1>
 

@@ -16,7 +16,10 @@ export default function Home() {
       <OmOss />
       <HvemViEr />
       <Services />
-      <Prosjekter hasBackground={true} />
+      <div>
+        <Prosjekter />
+      </div>
+    
       <History />
       <OurTeam />
     </Layout>

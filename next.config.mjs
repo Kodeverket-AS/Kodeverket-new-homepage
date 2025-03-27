@@ -5,7 +5,13 @@ const nextConfig = {
     SANITY_DATASET: "production",
   },
   images: {
-    domains: ["cdn.sanity.io"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cdn.sanity.io",
+       
+        pathname: "/**", },
+    ],
   },
 };
 
