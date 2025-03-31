@@ -36,10 +36,10 @@ export default function Carousel() {
           }
         }`;
 
-        const data = await client.fetch(query); 
-        setProjects(data); 
+        const data = await client.fetch(query);
+        setProjects(data);
       } catch (error) {
-        console.error("Błąd pobierania danych: ", error);
+        console.error("Data feil: ", error);
       }
     };
 
@@ -113,15 +113,15 @@ export default function Carousel() {
                   className="absolute inset-0 w-full h-full"
                 />
 
-                <div className="absolute inset-0 bg-cyan-950/80" />
+                <div className="absolute inset-0 bg-sky-700/80" />
 
                 <div className="absolute w-full h-full flex items-center justify-center">
                   <Image
                     src={urlFor(project.logo).url()}
                     alt={project.companyName}
-                    className={`lg:w-3/5 md:w-2/3 h-auto z-10 opacity-100 transition-opacity duration-500 
-                      group-[.swiper-slide-active]:opacity-0
-                      lg:group-[.swiper-slide-prev]:ml-35 
+                    className={`lg:w-3/5 md:w-2/3 h-auto z-10 opacity-100 transition-opacity duration-500
+                      group-[.swiper-slide-active]:hidden
+                      lg:group-[.swiper-slide-prev]:ml-35
                       lg:group-[.swiper-slide-next]:mr-35`}
                     width={200}
                     height={200}
@@ -129,7 +129,7 @@ export default function Carousel() {
                 </div>
               </div>
 
-              <div className="absolute inset-0 bg-sky-700 flex justify-center flex-col text-white p-4 transition-opacity opacity-100 duration-700 sm:opacity-0 sm:group-[.swiper-slide-active]:opacity-90">
+              <div className="absolute inset-0 bg-cyan-950 flex justify-center flex-col text-white p-4 transition-opacity opacity-100 duration-700 sm:opacity-0 sm:group-[.swiper-slide-active]:opacity-90">
                 <div className="w-9/10">
                   <h1 className="text-2xl mb-16 font-bold">
                     {project.companyName}
@@ -148,9 +148,13 @@ export default function Carousel() {
               </div>
             </SwiperSlide>
           ))}
-          <div className="swiper-button-prev absolute -left-10 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
+            <div className="swiper-button-prev absolute -left-10 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
           <div className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
         </Swiper>
+
+
+
+
       </div>
     </div>
   );
