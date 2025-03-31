@@ -19,6 +19,7 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -39,3 +40,4 @@ env.local
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+

@@ -41,3 +41,8 @@ body {
 .swiper-button-next::after {
   font-size: 30px !important;
 }
+
+.prosjekter-container {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
