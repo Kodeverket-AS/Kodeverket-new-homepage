@@ -42,7 +42,7 @@ export default function Kontakt() {
         alert(errorData.error || "Noe gikk galt. Prøv igjen.");
       }
     } catch (error) {
-      console.error("Feil ved sending:", error);
+      console.error("Feil ved sending", error);
       alert("Noe gikk galt. Prøv igjen.");
     }
   };
