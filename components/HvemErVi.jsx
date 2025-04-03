@@ -19,7 +19,7 @@ export default function HvemViEr() {
     <>
       <div className="my-6 flex  ">
         <div className="flex flex-col mx-4 md:mx-18">
-          <h1 className="text-2xl font-bold text-center py-6">
+          <h1 className="text-2xl lg:text-4xl font-bold text-center py-6">
             {" "}
             Hvem vi er ?{" "}
           </h1>

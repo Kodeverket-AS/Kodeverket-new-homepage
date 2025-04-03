@@ -47,11 +47,9 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className="bg-cyan-950 h-full my-8 p-6 my:mt-6 md:pb-10 flex items-center justify-center">
+    <div className=" h-full my-8 p-6 my:mt-6 md:pb-10 flex items-center justify-center">
       <div className="w-full md:max-w-5xl lg:max-w-6xl relative">
-        <h1 className="text-center my-6 md:my-10 font-semibold text-2xl md:text-4xl text-white">
-          Våre prosjekter
-        </h1>
+        
 
         <Swiper
           modules={[Navigation, Pagination, EffectCoverflow, Keyboard]}
@@ -148,13 +146,9 @@ export default function Carousel() {
               </div>
             </SwiperSlide>
           ))}
-            <div className="swiper-button-prev absolute -left-10 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
+          <div className="swiper-button-prev absolute -left-10 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
           <div className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
         </Swiper>
-
-
-
-
       </div>
     </div>
   );

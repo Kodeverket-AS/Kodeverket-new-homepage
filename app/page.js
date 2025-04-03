@@ -17,6 +17,9 @@ export default function Home() {
       <HvemViEr />
       <Services />
       <div>
+        <h1 className=" text-cyan-950 text-center my-6 md:my-10 font-semibold text-2xl lg:text-4xl">
+                  Våre prosjekter
+                </h1>
         <Prosjekter />
       </div>
     

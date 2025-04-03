@@ -2,7 +2,10 @@ export default function History() {
   return (
     <div>
       <div className="flex flex-col  mx-4 md:mx-18">
-        <h1 className="text-2xl font-bold text-center py-6"> Vår historie</h1>
+        <h1 className="text-2xl lg:text-4xl font-bold text-center py-6">
+          {" "}
+          Vår historie
+        </h1>
         <div className="flex flex-col-reverse md:flex-row">
           <div className="md:w-4/9 text-base flex flex-col items-left justify-center gap-4 py-4">
             <p>
