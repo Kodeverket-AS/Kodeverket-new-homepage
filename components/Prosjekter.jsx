@@ -10,7 +10,6 @@ import Image from "next/image";
 import { client } from "../sanity/lib/client";
 import { urlFor } from "../sanity/lib/image";
 
-
 export default function Carousel() {
   const [projects, setProjects] = useState([]);
 
@@ -19,7 +18,6 @@ export default function Carousel() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        
         const query = `*[_type == "project"]{
   companyName,
   url,
@@ -33,10 +31,8 @@ export default function Carousel() {
   }
 }`;
 
-
-
-        const data = await client.fetch(query); 
-        setProjects(data); 
+        const data = await client.fetch(query);
+        setProjects(data);
       } catch (error) {
         console.error("Data feil: ", error);
       }
@@ -48,7 +44,7 @@ export default function Carousel() {
     <div className="  h- md:h-[70lvh]  p-6 flex items-center justify-center ">
       <div className="w-full h- max-w-5xl relative mb- ">
         <h1 className="text-center my-10 font-semibold text-2xl md:text-4xl ">
-          Our projects
+          Våre prosjketer
         </h1>
 
         <Swiper
@@ -145,13 +141,9 @@ export default function Carousel() {
               </div>
             </SwiperSlide>
           ))}
-            <div className="swiper-button-prev absolute -left-10 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
+          <div className="swiper-button-prev absolute -left-10 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
           <div className="swiper-button-next absolute right-0 top-1/2 -translate-y-1/2 z-10 text-white text-3xl cursor-pointer hidden sm:block"></div>
         </Swiper>
-
- 
-        
-        
       </div>
     </div>
   );
