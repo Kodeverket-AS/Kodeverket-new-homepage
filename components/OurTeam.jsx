@@ -109,7 +109,8 @@ export default function OurTeam() {
             <div className="col-span-4 md:col-span-2 lg:col-span-1">
               <div className="bg-white dark:bg-slate-800 shadow-xl rounded-xl hover:-translate-y-1 duration-500 h-full p-6 lg:p-8 flex flex-col">
                 <img
-                  src="/team/boy.png"
+                  src="/team/ros.jpeg
+                  "
                   alt=""
                   className="max-w-full h-auto rounded-full border-4 p-1 border-sky-600 mx-auto"
                   width="140"
