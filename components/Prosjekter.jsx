@@ -136,7 +136,7 @@ export default function Carousel() {
                 </div>
 
                 <a
-                  className="bg-cyan-950 self-center text-center text-base w-1/3 border-1 border-white text-white px-6 py-2 mt-4 rounded hover:bg-cyan-800 transition cursor-pointer"
+                  className="bg-cyan-950 self-center text-center text-base w-full lg:w-1/3 border-1 border-white text-white px-6 py-2 mt-4 rounded hover:bg-cyan-800 transition cursor-pointer"
                   href={project.url}
                   target="_blank"
                   rel="noopener noreferrer"
