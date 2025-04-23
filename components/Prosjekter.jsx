@@ -47,10 +47,8 @@ export default function Carousel() {
   }, []);
 
   return (
-    <div className=" h-full my-8 p-6 my:mt-6 md:pb-10 flex items-center justify-center">
+    <div className="h-full my-8 p-6 my:mt-6 md:pb-10 flex items-center justify-center">
       <div className="w-full md:max-w-5xl lg:max-w-6xl relative">
-        
-
         <Swiper
           modules={[Navigation, Pagination, EffectCoverflow, Keyboard]}
           effect={"coverflow"}
@@ -110,17 +108,12 @@ export default function Carousel() {
                   }}
                   className="absolute inset-0 w-full h-full"
                 />
-
                 <div className="absolute inset-0 bg-sky-700/80" />
-
                 <div className="absolute w-full h-full flex items-center justify-center">
                   <Image
                     src={urlFor(project.logo).url()}
                     alt={project.companyName}
-                    className={`lg:w-3/5 md:w-2/3 h-auto z-10 opacity-100 transition-opacity duration-500
-                      group-[.swiper-slide-active]:hidden
-                      lg:group-[.swiper-slide-prev]:ml-35
-                      lg:group-[.swiper-slide-next]:mr-35`}
+                    className="lg:w-3/5 md:w-2/3 h-auto z-10 opacity-100 transition-opacity duration-500"
                     width={200}
                     height={200}
                   />
@@ -134,7 +127,6 @@ export default function Carousel() {
                   </h1>
                   <p className="text-base mb-4">{project.description}</p>
                 </div>
-
                 <a
                   className="bg-cyan-950 self-center text-center text-base w-full lg:w-1/3 border-1 border-white text-white px-6 py-2 mt-4 rounded hover:bg-cyan-800 transition cursor-pointer"
                   href={project.url}
