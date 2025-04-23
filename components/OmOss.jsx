@@ -31,7 +31,7 @@ export default function OmOss() {
                         className='text-white bg-sky-700 rounded w-full lg:w-34 h-12 shadow-lg hover:bg-sky-800 cursor-pointer'
                         onClick={() => setIsOpen(true)}
                     >
-                        Bestill nå
+                        Kom i kontakt
                     </button>
                 </div>
                 <img
