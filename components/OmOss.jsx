@@ -20,7 +20,9 @@ export default function OmOss() {
             <div className='flex flex-col-reverse lg:flex-row mx-4 lg:mx-18'>
                 <div className='flex flex-col lg:items-start justify-center gap-6 py-6 lg:w-6/12'>
                     <h1 className='text-4xl lg:text-5xl font-bold mb-4 mt-4'>
-                        Gjør din bedrift klar for fremtiden med{" "}
+
+                        Vi bygger nettsider som styrker din bedrift i dag!{" "}
+
                         <span className='text-sky-600 font-extrabold text-5xl lg:text-6xl block mt-2 mb-2'>
                             Kodeverket Bergen
                         </span>{" "}
