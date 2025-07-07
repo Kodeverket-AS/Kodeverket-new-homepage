@@ -155,7 +155,9 @@ export default function OurTeam() {
                 </div>
               </div>
             </div>
+
           ))}
+
         </div>
       </div>
     </section>
