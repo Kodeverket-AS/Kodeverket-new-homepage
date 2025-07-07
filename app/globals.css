@@ -46,3 +46,11 @@ body {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
+@media (max-width: 1023px) {
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none !important;
+  }
+}
