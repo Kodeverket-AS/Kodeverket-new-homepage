@@ -238,14 +238,14 @@ export default function OurTeam() {
                   height="140"
                 />
                 <div className="mt-6 flex flex-col flex-grow">
-                  <h4 className="text-2xl font-medium mb-1">Vegard</h4>
+                  <h4 className="text-2xl font-medium mb-1">Marius</h4>
                   <p className="mb-4 text-xl">Utvikler</p>
                   <div className="invisible text-sm mx-auto mb-4">
                     {/* Placeholder to maintain spacing */}
                   </div>
                   <div className="mt-auto">
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/per-marius-f%C3%B8yner-00bb02a1/"
                       className="inline-block opacity-60 transition duration-300 hover:translate-y-1 hover:opacity-100 mr-4"
                     >
                       <img
