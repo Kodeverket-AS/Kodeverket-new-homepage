@@ -1,0 +1,9 @@
+# Kodeverket Bergen security.txt
+# RFC 9116 – kontaktinfo for sikkerhetshendelser
+
+Contact: mailto:hello@kodeverketbergen.no
+Contact: https://www.kodeverketbergen.no/kontakt
+Preferred-Languages: no, en
+Canonical: https://www.kodeverketbergen.no/.well-known/security.txt
+Policy: https://www.kodeverketbergen.no/security-policy
+Expires: 2026-01-01T00:00:00.000Z
