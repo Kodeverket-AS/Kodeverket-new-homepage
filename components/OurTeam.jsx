@@ -15,7 +15,9 @@ const teamMembers = [
         name: "Kristoffer",
         role: "Teknisk ansvarlig",
         img: "/team/boy.png",
+        email: "kristoffer@jobloop.no",
         linkedin: "https://www.linkedin.com/in/kristoffer-117091321/",
+        mailto: true,
     },
     {
         name: "Monika",
@@ -36,7 +38,14 @@ const teamMembers = [
         linkedin: "#",
     },
     {
-        name: "Lars Henrik",
+        name: "Marius",
+        role: "Utvikler",
+        img: "/team/boy.png",
+        linkedin:
+            "https://www.linkedin.com/in/per-marius-f%C3%B8yner-00bb02a1/",
+    },
+    {
+        name: "Ole",
         role: "Utvikler",
         img: "/team/boy.png",
         linkedin: "#",
@@ -46,13 +55,6 @@ const teamMembers = [
         role: "Utvikler",
         img: "/team/boy.png",
         linkedin: "#",
-    },
-    {
-        name: "Marius",
-        role: "Utvikler",
-        img: "/team/boy.png",
-        linkedin:
-            "https://www.linkedin.com/in/per-marius-f%C3%B8yner-00bb02a1/",
     },
 ];
 
