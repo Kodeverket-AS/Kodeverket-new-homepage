@@ -1,40 +1,34 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
-const geistSans = Geist({
-    variable: "--font-geist-sans",
-    subsets: ["latin"],
-});
-
+const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 const geistMono = Geist_Mono({
     variable: "--font-geist-mono",
     subsets: ["latin"],
 });
 
-const org = {
+const ORG = {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: "Kodeverket",
     legalName: "Kodeverket Bergen",
     url: "https://www.kodeverketbergen.no",
     logo: "https://www.kodeverketbergen.no/logo.png",
-    sameAs: [
-        "https://www.facebook.com/kodeverketbergen",
-        "https://www.linkedin.com/company/kodeverket-bergen",
-    ],
+    sameAs: ["https://www.linkedin.com/company/kodeverktet-bergen/"],
     contactPoint: [
         {
             "@type": "ContactPoint",
             contactType: "customer support",
             email: "hello@kodeverketbergen.no",
-            telephone: "+47 41 62 79 16",
+            telephone: "+4741627916",
             areaServed: ["NO"],
             availableLanguage: ["no", "en"],
         },
     ],
 };
 
-const webSite = {
+const WEBSITE = {
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Kodeverket",
@@ -46,7 +40,7 @@ const webSite = {
     },
 };
 
-const webService = {
+const SERVICE = {
     "@context": "https://schema.org",
     "@type": "Service",
     name: "Skreddersydde nettsider og SEO",
@@ -68,23 +62,24 @@ const webService = {
         },
     },
     description:
-        "Vi leverer raske, SEO-optimaliserte nettsider og skreddersydd webdesign for bedrifter i Oslo, Stavanger, Bergen og resten av Norge.",
+        "Vi leverer raske, SEO-optimaliserte nettsider og skreddersydd webdesign for bedrifter, klubber, lag og privatpersoner i Oslo, Stavanger, Bergen og resten av Norge.",
 };
 
 export const metadata = {
-    title: "Nettsider i Bergen | Kodeverket Bergen – Webdesign & SEO",
+    metadataBase: new URL("https://www.kodeverketbergen.no"),
+    title: "Nettsider utviklet i regnet i Bergen | Kodeverket Bergen – Webdesign & SEO",
     description:
         "Kodeverket Bergen lager raske og SEO-optimaliserte nettsider. Skreddersydd webdesign som gir flere kunder – bestill gratis konsultasjon i dag!",
     keywords: [
         "nettsider Bergen",
         "webdesign Bergen",
+        "utviklet i regnet",
+        "utvikling Bergen",
         "SEO Bergen",
         "skreddersydd webutvikling",
         "bedriftsnettsted Bergen",
     ],
-    other: {
-        "application/ld+json": JSON.stringify([org, webSite, webService]),
-    },
+    alternates: { canonical: "/" },
     icons: {
         icon: "/favicon-32x32.png",
         apple: "/apple-touch-icon.png",
@@ -94,13 +89,7 @@ export const metadata = {
         description: "Spesialister på skreddersydde web-løsninger",
         url: "https://www.kodeverketbergen.no",
         siteName: "Kodeverket",
-        images: [
-            {
-                url: "/og-image.jpg",
-                width: 1200,
-                height: 630,
-            },
-        ],
+        images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
         locale: "no_NO",
         type: "website",
     },
@@ -116,6 +105,27 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang='no'>
+            <head>
+                <Script
+                    id='ld-org'
+                    type='application/ld+json'
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(ORG) }}
+                />
+                <Script
+                    id='ld-website'
+                    type='application/ld+json'
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(WEBSITE),
+                    }}
+                />
+                <Script
+                    id='ld-service'
+                    type='application/ld+json'
+                    dangerouslySetInnerHTML={{
+                        __html: JSON.stringify(SERVICE),
+                    }}
+                />
+            </head>
             <body
                 className={`${geistSans.variable} ${geistMono.variable} antialiased`}
             >
