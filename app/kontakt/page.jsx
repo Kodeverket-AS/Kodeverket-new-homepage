@@ -2,10 +2,15 @@ import KontaktIntro from "@/components/KontaktIntro";
 import KontaktBar from "@/components/KontaktBar";
 import KontaktForm from "@/components/KontaktForm";
 import MapComponent from "@/components/MapComponent";
-
 import Layout from "/components/Layout.jsx";
 
-//få opp en fungerende mailserver
+export const metadata = {
+    title: "Kontakt | Kodeverket Bergen",
+    description: "Ta kontakt med oss – vi vil gjerne høre fra deg.",
+    alternates: {
+        canonical: "https://www.kodeverketbergen.no/kontakt",
+    },
+};
 
 export default function KontaktPage() {
     return (
